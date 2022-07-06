@@ -1,12 +1,17 @@
 #include "main.h"
-
 /**
- * main calls two functions
+ * main - Prints putchar
  *
- * return:0
- * */
+ *
+ *
+ * Return: Always 0
+ */
 int main(void)
 {
-	print_putchar();
-	return (0);
+	int i;
+	char* eman="_putchar";
+        for(i=0;i<8;i++)
+                _putchar(eman[i]);
+        _putchar('\n');
+        return(0);
 }

@@ -1,17 +1,20 @@
 #include "main.h"
-
-/*
-*This function prints alphabets by invoking _putchar
-*/
+/**
+ * print_alphabet_x10 - This function prints lC alphabets ten times
+ *
+ * Return: no return
+ */
 void print_alphabet_x10(void)
 {
-	int i, j;
-	j = 97;
-	for (i = 0 ; i < 26 ; i++)
-	{
-		_putchar(j);
-		j++;
-	}
-	_putchar('\n');
-}
+	int e;
+	int h;
 
+	for (h = 0; h < 10; h++)
+	{
+		for (e = 'a'; e <= 'z'; e++)
+		{
+			_putchar(e);
+		}
+		_putchar('\n');
+	}
+}

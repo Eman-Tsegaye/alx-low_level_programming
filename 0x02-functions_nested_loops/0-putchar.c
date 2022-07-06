@@ -1,17 +1,20 @@
 #include "main.h"
+
 /**
- * main - Prints putchar
- *
- *
+ * main - prints a character by calling a _putchar function
  *
  * Return: Always 0
  */
 int main(void)
 {
-	int i;
-	char* eman="_putchar";
-        for(i=0;i<8;i++)
-                _putchar(eman[i]);
-        _putchar('\n');
-        return(0);
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
+	_putchar('\n');
+	return (0);
 }

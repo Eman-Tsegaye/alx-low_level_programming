@@ -2,6 +2,7 @@
 /**
  * main -print if the number is positive or negative
  * or zero
+ *
  * Return: 0 if successful
  */
 int main(void)

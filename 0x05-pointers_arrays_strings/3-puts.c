@@ -2,8 +2,6 @@
 /**
  * _puts-prints a string
  * @str:character
- * @i:integer
- * @len:integer
  * Return:always 0
  */
 void _puts(char *str)

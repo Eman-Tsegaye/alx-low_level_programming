@@ -1,7 +1,6 @@
 #include "main.h"
 /**
  * _strlen-counts the length of a string
- * @len:integer
  * @s:character
  * Return:integer
  */

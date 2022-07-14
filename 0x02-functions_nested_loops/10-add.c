@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * add-adds two numbers
- * @X:integer prototype
+ * @x:integer prototype
  * @y:integer prototype
  * Return:integer
  */

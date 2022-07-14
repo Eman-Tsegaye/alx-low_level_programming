@@ -15,7 +15,7 @@ char *string_toupper(char *e)
 	for (i = 0; i < len; i++)
 	{
 		if (e[i] >= 97 && e[i] <= 122)
-			e[i] = ((e[i] + 32) + '0');
+			e[i] = (e[i] - 32);
 	}
 return (e);
 }

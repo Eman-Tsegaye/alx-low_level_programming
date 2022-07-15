@@ -21,4 +21,6 @@ int main(void)
 	}
 	printf("%d", sum);
 	printf("%s", "\n");
+return (0);
 }
+

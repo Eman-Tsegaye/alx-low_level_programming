@@ -6,19 +6,25 @@
  */
 int main(void)
 {
-	unsigned int x[1024], y[1024], i, sum = 0;
+	unsigned int x[35], y[35], i, sum = 0;
 
-	for (i = 0; i < 1022; i++)
+	for (i = 0; i < 35; i++)
 		y[i] = i + 1;
 	x[0] = 1;
 	x[1] = 2;
-	for (i = 0; i < 1022; i++)
+	for (i = 0; i < 35; i++)
 	{
-		x[i + 2] = y[i] + y[i + 1];
+		x[i + 2] = x[i] + x[i + 1];
 		if ((x[i + 2] % 2) && (x[i + 2] <= 4000000))
 			sum = sum + x[i];
 	}
 	printf("%d", sum);
 	printf("%s", "\n");
+	i = 0;
+	while (i < 35)
+	{
+		printf("%d ,", x[i]);
+		i++;
+	}
 return (0);
 }

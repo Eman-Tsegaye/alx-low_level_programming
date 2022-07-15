@@ -2,8 +2,9 @@
 #include <stdio.h>
 /**
  * main-computes the sum of all natural numbers below 1024
+ * Return:Always 0
  */
-void main(void)
+int main(void)
 {
 	int x[1024], y[1024], i, len = 0, sum = 0;
 

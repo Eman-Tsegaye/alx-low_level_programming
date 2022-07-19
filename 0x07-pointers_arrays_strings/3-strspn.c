@@ -14,7 +14,6 @@ unsigned int _strspn(char *s, char *accept)
 	len = 0;
 	j = 0;
 
-	/*while (*(accept + len) != '\0')*/
 	while ((s[len] >= 65 && s[len] <= 90) || (s[len] >= 97 && s[len] <= 122))
 		len += 1;
 

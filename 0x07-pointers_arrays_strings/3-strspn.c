@@ -19,7 +19,7 @@ unsigned int _strspn(char *s, char *accept)
 
 	while ((s[i] >= 65 && s[i] <= 90) || (s[i] >= 97 && s[i] <= 122))
 	{
-		for (j = 0; j <= len; j++)
+		for (j = 0; j < len; j++)
 		{
 			if (accept[i] == s[j])
 				sum += 1;

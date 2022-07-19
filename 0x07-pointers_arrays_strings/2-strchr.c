@@ -19,6 +19,11 @@ char *_strchr(char *s, char c)
 		if (*(s + i) == c)
 			break;
 	}
-	/*if (i == len - 1)*/
+	if (i == len - 1)
+	{
+		*s = '\0';
+		return (s);
+	}
+	else
 		return (s + i);
 }

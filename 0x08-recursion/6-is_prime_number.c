@@ -31,5 +31,5 @@ int _prime_tracer(int n, int checker)
  */
 int is_prime_number(int n)
 {
-	return (_prime_tracer(n, n-1));
+	return (_prime_tracer(n, n - 1));
 }

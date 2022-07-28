@@ -7,29 +7,18 @@
  */
 char *_strpbrk(char *s, char *accept)
 {
-        unsigned int i, j, sum, len;
+	int i;
 
-        i = 0;
-        sum = 0;
-        len = 0;
-        j = 0;
-
-        /*while (*(accept + len) != '\0')*/
-        while ((s[len] >= 65 && s[len] <= 90) || (s[len] >= 97 && s[len] <= 122))
-                len += 1;
-
-        while ((s[i] >= 65 && s[i] <= 90) || (s[i] >= 97 && s[i] <= 122))
-        {
-                while (j < len)
-                {
-                        if (accept[i] == s[j])
-                        {
-                                sum += 1;
-                        }
-                        j += 1;
-                }
-                i += 1;
-                j = 0;
-        }
-        return (sum);
+	while (*s)
+	{
+		i = 0;
+		while (accept[i])
+		{
+			if (*s == accept[i])
+				return (s);
+			i++;
+		}
+		s++;
+	}
+	return ('\0');	
 }

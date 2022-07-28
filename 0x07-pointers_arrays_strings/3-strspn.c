@@ -7,28 +7,20 @@
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int i, j, sum, len;
+	int i = 0, j, count = 0;
 
-	i = 0;
-	sum = 0;
-	len = 0;
-	j = 0;
-
-	while ((s[len] >= 65 && s[len] <= 90) || (s[len] >= 97 && s[len] <= 122))
-		len += 1;
-
-	while ((s[i] >= 65 && s[i] <= 90) || (s[i] >= 97 && s[i] <= 122))
+	while (s[i])
 	{
-		while (j < len)
-		{
-			if (accept[i] == s[j])
-			{
-				sum += 1;
-			}
-			j += 1;
-		}
-		i += 1;
+		if (s[i] == ',' || s[i] == ' ')
+			break;
 		j = 0;
+		while (accept[j])
+		{
+			if (accept[j] == s[i])
+				count++;
+			j++;
+		}
+		i++;
 	}
-	return (sum);
+	return (count);
 }

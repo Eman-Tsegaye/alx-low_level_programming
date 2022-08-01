@@ -3,6 +3,8 @@
 /**
  * print_dog-prints an info about a dog
  * @d:pointer
+ *
+ * Return:nothing
  */
 
 void print_dog(struct dog *d)
